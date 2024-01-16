@@ -8,7 +8,7 @@ font-family: 'Mulish', sans-serif;
 #golo{
     color: #131318;
     font-family: Mulish;
-    font-size: 36px;
+    font-size: 2.1rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -21,6 +21,7 @@ font-family: 'Mulish', sans-serif;
     width: 100%;
     background-repeat: no-repeat;
     height: 100%;
+    background-size: cover;
 }
  nav ul li{
     list-style: none;
@@ -28,7 +29,7 @@ font-family: 'Mulish', sans-serif;
     color: ( #424247);
 text-align: center;
 font-family: Mulish;
-font-size: 18px;
+font-size: 1.1rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -37,7 +38,7 @@ line-height: normal;
 span {
     color: #FF5400;
 font-family: Mulish;
-font-size: 36px;
+font-size: 2.1rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -51,6 +52,8 @@ line-height: normal;
 .pic{
     display: flex;
     gap: 15px;
+    
+    height: 2rem;
 
 }
 .tag{
@@ -64,7 +67,7 @@ line-height: normal;
     color: #FFF;
 text-align: center;
 font-family: Mulish;
-font-size: 16px;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
@@ -72,7 +75,7 @@ line-height: 26px; /* 162.5% */
 h1{
     color: #FFF;
 font-family: Mulish;
-font-size: 64px;
+font-size: 4rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -96,10 +99,10 @@ input {
     border-radius: 8px;
     background-color: #FF5400;
     color: white;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
     font-family: Mulish;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -121,7 +124,7 @@ input {
 p{
     color: #5A5A5D;
 font-family: Mulish;
-font-size: 16px;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
@@ -130,7 +133,7 @@ h2{
     color: #131318;
 text-align: center;
 font-family: Mulish;
-font-size: 40px;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -149,7 +152,7 @@ line-height: normal;
     color: #FFF;
 text-align: center;
 font-family: Mulish;
-font-size: 28px;
+font-size: 1.75rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -194,7 +197,7 @@ td{
 h5{
     color: #131318;
 font-family: Mulish;
-font-size: 24px;
+font-size: 1.75rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -258,7 +261,7 @@ line-height: normal;
     margin: 0px;
     color: #FFF;
 font-family: Mulish;
-font-size: 32px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -284,7 +287,7 @@ line-height: normal;
     padding: 14px 150px;
     text-align: center;
     font-family: Mulish;
-    font-size: 16px;
+    font-size:1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -320,12 +323,52 @@ hr{
 
 
 @media screen and (max-width: 570px){
-    header {
-        padding:20px;
+    header,
+    body ,.choos,
+    .news-letter
+    {
+        padding:0px;
     }
-    .explor-button{
+    .blue{
+        margin-top: 24px;
+    }
+    .put.input,
+    .input{
+        width: 332px;
+        align-items: center;
+    }
+    .des-img img,newsimg img{
+        width: 332px;
+        margin-top: 26px;
+
+    }
+    
+    .red,
+    .blue,
+    .green{
+        padding: 0px;
+        width: auto;
+        
+    }
+    .popular-img img{
+        padding: 10px;
+        width: 332px;
+    }
+    .banner-con,
+    .popular{
+        padding: 0px;
+    }
+    .tag,.main-card,.news-letter{
+        flex-direction: column;
+    }
+    .explor-button,
+    .popular{
         flex-direction:column;
         gap: 4px;
+    }
+    #golo {
+        margin: 0px;
+        font-size: 32px;
     }
 
 }
